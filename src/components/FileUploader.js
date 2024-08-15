@@ -24,10 +24,13 @@ function FileUploader({ setFile, setCsvData, validateConditions, allConditionsMe
 
   const handleUpload = () => {
     if (file && allConditionsMet) {
-      uploadFileToS3(file, 
+
+      uploadFileToS3(file, "data.csv",
         (successMessage) => setNotification(successMessage),
         (errorMessage) => setNotification(errorMessage)
       );
+
+      uploadFileToS3(file, "archive/data_"+Date.now()+".csv"); // Also upload backup data
     }
   };
 
