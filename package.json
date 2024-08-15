@@ -1,0 +1,30 @@
+{
+  "name": "data_upload",
+  "version": "0.2.0",
+  "dependencies": {
+    "aws-sdk": "^2.1675.0",
+    "express": "^4.17.1",
+    "papaparse": "^5.4.1",
+    "react-dom": "^18.3.1",
+    "react-scripts": "^5.0.1",
+    "socket.io": "^4.1.2"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
