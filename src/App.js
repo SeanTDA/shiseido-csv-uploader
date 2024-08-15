@@ -14,8 +14,8 @@ function App() {
     { cell: "C14", check: { comparison: "<", compareValue: 147.15 }, valid: null, actual: null },
   ]);
   const [metadata, setMetadata] = useState({
-    lastUploadDate: "14/05/24",
-    successRate: 0.5
+    //lastUploadDate: "14/05/24",
+    //successRate: 0.5
   });
   const [notification, setNotification] = useState(null);
 
@@ -89,13 +89,13 @@ function App() {
         setNotification={setNotification}
       />
       <ConditionsList conditions={conditions} />
-      <MetadataTable metadata={metadata} />
       {notification && (
         <Notification message={notification} onClose={handleNotificationClose} />
       )}
     </div>
   );
 }
+/* <MetadataTable metadata={metadata} /> */
 
 ReactDOM.render(<App />, document.getElementById('root'));
 
